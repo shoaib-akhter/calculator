@@ -1,0 +1,166 @@
+/* General Reset */
+/* Resetting margins, paddings, and setting box-sizing for consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  /* Centering the calculator in the viewport with a clean background */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Calculator Container */
+  /* Defines the calculator's overall size, background, and border styling */
+  .calculator {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Display Section */
+  /* Styling for the calculator display area */
+  .display {
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    height: 100px;
+    line-height: 60px;
+    overflow: hidden;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Row Styling */
+  /* Ensures consistent spacing and alignment of buttons within each row */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px; /* Space between buttons */
+    padding: 4px;
+  }
+  
+  /* General Button Styling */
+  /* Applies consistent dimensions, font size, and hover effects for all buttons */
+  .btn {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    flex: 1;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Hover and Active Effects */
+  .btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .btn:active {
+    background-color: #ccc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Special Button Styling */
+  /* CLEAR Button */
+  .clear {
+    flex: 1; /* Now spans one column */
+    background-color: #ff6b6b;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .clear:hover {
+    background-color: #ff4c4c;
+  }
+  
+  /* Backspace Button */
+  .back {
+    background-color: #ffd56b;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .back::before {
+    content: "←"; /* Left Arrow Symbol */
+    font-size: 2rem; /* Reset size */
+    font-weight: bold;
+  }
+  
+  .back:hover {
+    background-color: #ffc44d;
+  }
+  
+  /* Exponent Button */
+  .exponent {
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+  }
+
+  .exponent sup {
+    vertical-align: super; /* Ensures proper superscript positioning */
+    font-size: 0.8em; /* Adjust size to make it look natural */
+  }
+  
+  .exponent:hover {
+    background-color: #e68900;
+  }
+  
+  /* Operator Buttons */
+  .operator {
+    background-color: #5fc092;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem; /* Reset font size */
+    height: 60px; /* Reset height */
+  }
+  
+  .operator:hover {
+    background-color: #45a049;
+  }
+  
+  /* Equal Button */
+  .equal {
+    background-color: #5e9cdb;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem; /* Reset font size */
+    height: 60px; /* Reset height */
+  }
+  
+  .equal:hover {
+    background-color: #155fa0;
+  }
+  
+  /* Zero Button */
+  .zero {
+    flex: 2; /* Spans two columns */
+  }
+  
+  /* Dot Button */
+  .dot {
+    background-color: #f9f9f9;
+  }
+  
+  .dot:hover {
+    background-color: #e0e0e0;
+  }
+  
