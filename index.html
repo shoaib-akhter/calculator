@@ -6,20 +6,20 @@
   <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <div class="calculator">
     <!-- Display Section -->
     <div class="display">0</div>
 
-    <!-- Row 1: CLEAR, BACK, / -->
+    <!-- Row 1: CLEAR, BACK, Exp, / -->
     <div class="row">
         <button class="btn clear">AC</button>
-        <button class="btn back"></button>
-        <button class="btn exponent">xⁿ</button>
+        <button class="btn back">DEL</button>
+        <button class="btn operator exponent">xⁿ</button>
         <button class="btn operator divide">÷</button>
     </div>
       
-
     <!-- Row 2: 7, 8, 9, * -->
     <div class="row">
       <button class="btn digit">7</button>
@@ -46,10 +46,14 @@
 
     <!-- Row 5: 0, ., = -->
     <div class="row">
-      <button class="btn zero">0</button>
+      <button class="btn digit zero">0</button>
       <button class="btn dot">.</button>
       <button class="btn equal">=</button>
     </div>
   </div>
+
+  <script src="script.js"></script>
+
 </body>
+
 </html>

@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #FDFBEA;
   }
   
   /* Calculator Container */
@@ -93,16 +93,16 @@
   
   /* Backspace Button */
   .back {
-    background-color: #ffd56b;
-    color: black;
+    background-color: #fbce5b;
+    color: white;
     font-weight: bold;
   }
   
-  .back::before {
-    content: "←"; /* Left Arrow Symbol */
-    font-size: 2rem; /* Reset size */
+  /* .back::before {
+    content: "←"; 
+    font-size: 2rem; 
     font-weight: bold;
-  }
+  } */
   
   .back:hover {
     background-color: #ffc44d;
